@@ -1,0 +1,6 @@
+<beans>
+    <bean id="dao" class="rima.com.dao.BanqueDaoImpl"/>
+    <bean id="metier" class="rima.com.metier.BanqueMetierImplementation">
+        <property name="dao" ref="dao"/>
+    </bean>
+</beans>
